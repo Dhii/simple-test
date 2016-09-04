@@ -38,4 +38,24 @@ class DefaultRunner extends AbstractRunner
     {
         return 'default';
     }
+
+    /**
+     * {@inheritdoc}
+     *
+     * @since [*next-version*]
+     */
+    protected function _createResultFromTest(Test\TestBaseInterface $test, $message, $status, $assertionCount, $runnerCode, $time, $memory)
+    {
+        return new Test\DefaultResult(
+                $test->getCaseName(),
+                $test->getMethodName(),
+                $test->getKey(),
+                $message,
+                $status,
+                $assertionCount,
+                $test->getSuiteCode(),
+                $runnerCode,
+                $time,
+                $memory);
+    }
 }
