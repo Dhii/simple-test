@@ -1,0 +1,35 @@
+{
+    "name": "dhii/simple-test",
+    "description": "A simple unit testing framework, for inclusion with other tools.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dhii Team",
+            "email": "development@dhii.co"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "dhii/simple-test-abstract": "dev-master"
+    },
+    "require-dev": {
+        "dhii/php-cs-fixer-config": "dev-php-5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dhii\\SimpleTest\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dhii\\SimpleTest\\Test\\Stub\\": "test/stub/"
+        }
+    },
+    "repositories": [
+        {
+            "url": "https://github.com/Dhii/simple-test-abstract.git",
+            "type": "git"
+        }
+    ]
+}
