@@ -14,11 +14,9 @@ class DefaultWriter extends AbstractWriter
      *
      * @since [*next-version*]
      */
-    public function write($text, $level = self::LVL_1)
+    public function _write($text)
     {
-        if ($this->_isShouldWriteLevel($level)) {
-            echo $text;
-        }
+        echo $text;
 
         return $this;
     }

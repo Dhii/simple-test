@@ -133,7 +133,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/simple-test-abstract.git",
-                "reference": "784fb437f491e82f3b36ce9afb65e1527ee53b85"
+                "reference": "b04849730b7fff246c9759ce9ee586f17c47b1d1"
             },
             "require": {
                 "dhii/collections-abstract": "dev-master",
@@ -165,7 +165,7 @@
                 }
             ],
             "description": "Base classes for SimpleTest",
-            "time": "2016-09-04 09:53:24"
+            "time": "2016-09-04 16:29:24"
         },
         {
             "name": "dhii/stats-abstract",

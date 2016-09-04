@@ -3,6 +3,7 @@
 namespace Dhii\SimpleTest\Runner;
 
 use Dhii\Stats;
+use Dhii\SimpleTest\Test;
 use Dhii\SimpleTest\Coordinator;
 use Dhii\SimpleTest\Assertion;
 
@@ -57,5 +58,15 @@ class DefaultRunner extends AbstractRunner
                 $runnerCode,
                 $time,
                 $memory);
+    }
+
+    /**
+     * {@inheritdoc}
+     *
+     * @since [*next-version*]
+     */
+    protected function _createResultSet($results)
+    {
+        return new Test\ResultSet($results, $this->_getStatAggregator());
     }
 }
