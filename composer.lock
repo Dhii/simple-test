@@ -133,10 +133,11 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/simple-test-abstract.git",
-                "reference": "807050ee2005c0ceed3e6583af2ddb8e307229a7"
+                "reference": "d7616ce8a33d3785897d8d6b8357fcf3404486ae"
             },
             "require": {
                 "dhii/collections-abstract": "dev-master",
+                "dhii/simple-test-interface": "dev-master",
                 "dhii/stats-abstract": "dev-master",
                 "php": "^5.3.3 | ^7.0"
             },
@@ -167,7 +168,45 @@
                 }
             ],
             "description": "Base classes for SimpleTest",
-            "time": "2016-09-15 08:34:54"
+            "time": "2016-09-15 15:47:26"
+        },
+        {
+            "name": "dhii/simple-test-interface",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Dhii/simple-test-interface.git",
+                "reference": "45a57e27734c73628a477ef2c96cdc3b71f820ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dhii/simple-test-interface/zipball/45a57e27734c73628a477ef2c96cdc3b71f820ea",
+                "reference": "45a57e27734c73628a477ef2c96cdc3b71f820ea",
+                "shasum": ""
+            },
+            "require-dev": {
+                "dhii/php-cs-fixer-config": "dev-php-5.3",
+                "phpunit/phpunit": "4.*",
+                "ptrofimov/xpmock": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dhii\\SimpleTest\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dhii Team",
+                    "email": "development@dhii.co"
+                }
+            ],
+            "description": "Interfaces for Dhii SimpleTest",
+            "time": "2016-09-15 15:39:15"
         },
         {
             "name": "dhii/stats-abstract",
