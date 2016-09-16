@@ -84,7 +84,7 @@ class Tester extends AbstractStatefulTester implements Suite\FactoryInterface
      *
      * @since [*next-version*]
      */
-    protected function _createSuite($code, SimpleTest\Coordinator\CoordinatorInterface $coordinator)
+    protected function _createSuite($code, Coordinator\CoordinatorInterface $coordinator)
     {
         return new Suite\DefaultSuite($code, $coordinator);
     }
