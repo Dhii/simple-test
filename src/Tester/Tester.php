@@ -4,6 +4,9 @@ namespace Dhii\SimpleTest\Tester;
 
 use Dhii\SimpleTest\Coordinator;
 use Dhii\SimpleTest\Runner;
+use Dhii\SimpleTest\Suite;
+use Dhii\SimpleTest\Assertion;
+use Dhii\SimpleTest\Writer;
 use Dhii\Collection;
 use Dhii\SimpleTest\Test;
 use Dhii\Stats;
@@ -13,66 +16,106 @@ use Dhii\Stats;
  *
  * @since [*next-version*]
  */
-class Tester extends AbstractTester
+class Tester extends AbstractStatefulTester implements Suite\FactoryInterface
 {
-    protected $statAggregator;
-
     /**
-     * @since [*next-version*]
-     *
-     * @param Coordinator\CoordinatorInterface $coordinator A writer that will be used by this tester to output data.
-     */
-    public function __construct(
-            Coordinator\CoordinatorInterface $coordinator,
-            Runner\RunnerInterface $runner,
-            Stats\AggregatorInterface $statAggregator
-    ) {
-        $this->_setCoordinator($coordinator);
-        $this->_setRunner($runner);
-        $this->_setStatAggregator($statAggregator);
-    }
-
-    /**
-     * Assign the stat aggregator to be used by this instance.
+     * @inheritdoc
      *
      * @since [*next-version*]
-     *
-     * @param Stats\AggregatorInterface $statAggregator The stat aggregator that will be assigned to test results.
-     *
-     * @return Tester This instance.
      */
-    protected function _setStatAggregator(Stats\AggregatorInterface $statAggregator)
+    public function createSuite($code)
     {
-        $this->statAggregator = $statAggregator;
-
-        return $this;
+        return new Suite\DefaultSuite($code, $this->_getCoordinatorInstance());
     }
 
     /**
-     * Retrieve the stat aggregator used by this instance.
+     * @inheritdoc
      *
      * @since [*next-version*]
-     *
-     * @return Stats\AggregatorInterface The stat aggregator that is used by this instance.
      */
-    protected function _getStatAggregator()
+    protected function _createWriter()
     {
-        return $this->statAggregator;
+        return new Writer\DefaultWriter();
     }
 
     /**
-     * Create a new iterator of test result sets.
+     * @inheritdoc
+     *
+     * @since [*next-version*]
+     */
+    protected function _createAssertionMaker()
+    {
+        return new Assertion\DefaultMaker();
+    }
+
+    /**
+     * Prepares a result set from an array of results.
      *
      * @since [*next-version*]
      *
      * @param Test\ResultInterface[]|\Traversable $results A traversible list of result sets.
      *
+     * @return Test\ResultSetInterface The list of result sets.
+     */
+    protected function _prepareResults($results)
+    {
+        return $this->_createResultSetIterator($results, $this->_getStatAggregatorInstance());
+    }
+
+    /**
+     * Creates a new instance of a result set collection.
+     *
+     * @since [*next-version*]
+     *
+     * @param Test\ResultInterface[]|\Traversable $results A traversible list of result sets.
+     * @param Stats\AggregatorInterface The stat aggregator for the new iterator.
+     *
      * @return Collection\SequenceIteratorIteratorInterface|Test\ResultSetInterface The list of result sets.
      */
-    protected function _createResultSetIterator($results)
+    protected function _createResultSetIterator($results, Stats\AggregatorInterface $aggregator = null)
     {
-        $iterator = new Test\ResultSetCollection($results, $this->_getStatAggregator());
+        $iterator = new Test\ResultSetCollection($results, $aggregator);
 
         return $iterator;
+    }
+
+    /**
+     * @inheritdoc
+     *
+     * @since [*next-version*]
+     */
+    protected function _createSuite($code, SimpleTest\Coordinator\CoordinatorInterface $coordinator)
+    {
+        return new Suite\DefaultSuite($code, $coordinator);
+    }
+
+    /**
+     * @inheritdoc
+     *
+     * @since [*next-version*]
+     */
+    protected function _createStatAggregator()
+    {
+        return new Test\DefaultAggregator();
+    }
+
+    /**
+     * @inheritdoc
+     *
+     * @since [*next-version*]
+     */
+    protected function _createCoordinator(Writer\WriterInterface $writer)
+    {
+        return new Coordinator\DefaultCoordinator($writer);
+    }
+
+    /**
+     * @inheritdoc
+     *
+     * @since [*next-version*]
+     */
+    protected function _createRunner(Coordinator\CoordinatorInterface $coordinator, Assertion\MakerInterface $assertionMaker, Stats\AggregatorInterface $statAggregator)
+    {
+        return new Runner\DefaultRunner($coordinator, $assertionMaker, $statAggregator);
     }
 }
