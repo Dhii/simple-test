@@ -46,4 +46,29 @@ class ResultSetCollection extends AbstractResultSetCollection
             throw new UnexpectedValueException(sprintf('Item must be a valid test result set'));
         }
     }
+
+    /**
+     * {@inheritdoc}
+     *
+     * @since [*next-version*]
+     */
+    protected function _createSearchResultsIterator($results)
+    {
+        $class    = 'Dhii\SimpleTest\Test\ResultSet';
+        $instance = new $class(array(), $this->_getStatAggregator());
+        /* @var $instance AbstractSearchableCollection */
+        $instance->_setItems($results);
+
+        return $instance;
+    }
+
+    /**
+     * {@inheritdoc}
+     *
+     * @since [*next-version*]
+     */
+    protected function _isValidSearchResult($item)
+    {
+        return $item instanceof ResultInterface;
+    }
 }
