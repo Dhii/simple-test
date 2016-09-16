@@ -25,7 +25,7 @@ class Tester extends AbstractStatefulTester implements Suite\FactoryInterface
      */
     public function createSuite($code)
     {
-        return new Suite\DefaultSuite($code, $this->_getCoordinatorInstance());
+        return $this->_createSuite($code, $this->_getCoordinatorInstance());
     }
 
     /**
