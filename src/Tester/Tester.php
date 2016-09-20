@@ -19,6 +19,19 @@ use Dhii\Stats;
 class Tester extends AbstractStatefulTester implements Suite\FactoryInterface
 {
     /**
+     * @param Writer\WriterInterface A writer for this tester to use.
+     *  If none given, will create a default writer instance.
+     *
+     * @since [*next-version*]
+     *
+     * @param Writer\WriterInterface $writer The writer to assign to this instance.
+     */
+    public function __construct(Writer\WriterInterface $writer = null)
+    {
+        $this->_setWriter($writer);
+    }
+
+    /**
      * @inheritdoc
      *
      * @since [*next-version*]
