@@ -28,7 +28,9 @@ class Tester extends AbstractStatefulTester implements Suite\FactoryInterface
      */
     public function __construct(Writer\WriterInterface $writer = null)
     {
-        $this->_setWriter($writer);
+        if (!is_null($writer)) {
+            $this->_setWriter($writer);
+        }
     }
 
     /**
