@@ -7,6 +7,6 @@ namespace Dhii\SimpleTest\Test;
  *
  * @since [*next-version*]
  */
-class DefaultAggregator extends AbstractAggregator
+class Aggregator extends AbstractAggregator
 {
 }

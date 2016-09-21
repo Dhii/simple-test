@@ -9,18 +9,18 @@ namespace Dhii\SimpleTest\Locator;
  *
  * @since [*next-version*]
  */
-class DefaultFilePathLocator extends AbstractFilePathLocator
+class FilePathLocator extends AbstractFilePathLocator
 {
     /**
      * {@inheritdoc}
      *
      * @since [*next-version*]
      *
-     * @return DefaultClassLocator
+     * @return ClassLocator
      */
     protected function _createClassLocator($className)
     {
-        $locator = new DefaultClassLocator();
+        $locator = new ClassLocator();
         $locator->setClass($className);
 
         return $locator;
@@ -31,11 +31,11 @@ class DefaultFilePathLocator extends AbstractFilePathLocator
      *
      * @since [*next-version*]
      *
-     * @return DefaultResultSet
+     * @return ResultSet
      */
     protected function _createResultSet($items)
     {
-        return new DefaultResultSet($items);
+        return new ResultSet($items);
     }
 
     /**

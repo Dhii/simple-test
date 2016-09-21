@@ -48,7 +48,7 @@ class Tester extends AbstractStatefulTester implements Suite\FactoryInterface
      */
     protected function _createWriter()
     {
-        return new Writer\DefaultWriter();
+        return new Writer\Writer();
     }
 
     /**
@@ -58,7 +58,7 @@ class Tester extends AbstractStatefulTester implements Suite\FactoryInterface
      */
     protected function _createAssertionMaker()
     {
-        return new Assertion\DefaultMaker();
+        return new Assertion\Maker();
     }
 
     /**
@@ -99,7 +99,7 @@ class Tester extends AbstractStatefulTester implements Suite\FactoryInterface
      */
     protected function _createSuite($code, Coordinator\CoordinatorInterface $coordinator)
     {
-        return new Suite\DefaultSuite($code, $coordinator);
+        return new Suite\Suite($code, $coordinator);
     }
 
     /**
@@ -109,7 +109,7 @@ class Tester extends AbstractStatefulTester implements Suite\FactoryInterface
      */
     protected function _createStatAggregator()
     {
-        return new Test\DefaultAggregator();
+        return new Test\Aggregator();
     }
 
     /**
@@ -119,7 +119,7 @@ class Tester extends AbstractStatefulTester implements Suite\FactoryInterface
      */
     protected function _createCoordinator(Writer\WriterInterface $writer)
     {
-        return new Coordinator\DefaultCoordinator($writer);
+        return new Coordinator\Coordinator($writer);
     }
 
     /**
@@ -129,6 +129,6 @@ class Tester extends AbstractStatefulTester implements Suite\FactoryInterface
      */
     protected function _createRunner(Coordinator\CoordinatorInterface $coordinator, Assertion\MakerInterface $assertionMaker, Stats\AggregatorInterface $statAggregator)
     {
-        return new Runner\DefaultRunner($coordinator, $assertionMaker, $statAggregator);
+        return new Runner\Runner($coordinator, $assertionMaker, $statAggregator);
     }
 }

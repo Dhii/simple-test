@@ -10,7 +10,7 @@ use InvalidArgumentException;
  *
  * @since [*next-version*]
  */
-class DefaultResultSet extends AbstractResultSet
+class ResultSet extends AbstractResultSet
 {
     /**
      * @since [*next-version*]

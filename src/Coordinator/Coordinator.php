@@ -12,7 +12,7 @@ use Dhii\SimpleTest\Assertion;
  *
  * @since [*next-version*]
  */
-class DefaultCoordinator extends AbstractCoordinator
+class Coordinator extends AbstractCoordinator
 {
     protected $writer;
 

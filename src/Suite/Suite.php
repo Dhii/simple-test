@@ -10,7 +10,7 @@ use Dhii\SimpleTest\Coordinator;
  *
  * @since [*next-version*]
  */
-class DefaultSuite extends AbstractSuite
+class Suite extends AbstractSuite
 {
     /**
      * @since [*next-version*]

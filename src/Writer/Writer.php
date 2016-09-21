@@ -7,7 +7,7 @@ namespace Dhii\SimpleTest\Writer;
  *
  * @since [*next-version*]
  */
-class DefaultWriter extends AbstractWriter
+class Writer extends AbstractWriter
 {
     /**
      * {@inheritdoc}

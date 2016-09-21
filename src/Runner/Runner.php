@@ -12,7 +12,7 @@ use Dhii\SimpleTest\Assertion;
  *
  * @since [*next-version*]
  */
-class DefaultRunner extends AbstractRunner
+class Runner extends AbstractRunner
 {
     /**
      * @since [*next-version*]
@@ -47,7 +47,7 @@ class DefaultRunner extends AbstractRunner
      */
     protected function _createResultFromTest(Test\TestBaseInterface $test, $message, $status, $assertionCount, $runnerCode, $time, $memory)
     {
-        return new Test\DefaultResult(
+        return new Test\Result(
                 $test->getCaseName(),
                 $test->getMethodName(),
                 $test->getKey(),

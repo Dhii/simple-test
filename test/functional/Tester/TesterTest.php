@@ -31,11 +31,11 @@ class TesterTest extends \Xpmock\TestCase
      * 
      * @since [*next-version*]
      * 
-     * @return \Dhii\SimpleTest\Locator\DefaultClassLocator The new class locator instance.
+     * @return \Dhii\SimpleTest\Locator\ClassLocator The new class locator instance.
      */
     public function createClassLocator()
     {
-        $instance = new \Dhii\SimpleTest\Locator\DefaultClassLocator();
+        $instance = new \Dhii\SimpleTest\Locator\ClassLocator();
         
         return $instance;
     }

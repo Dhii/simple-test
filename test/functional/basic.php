@@ -17,15 +17,15 @@ class MyTestSource extends AbstractSource
     /**
      * Demonstrates how a test source can be fed by an array.
      *
-     * @return SimpleTest\Test\DefaultTest[]
+     * @return SimpleTest\Test\Test[]
      */
     public function getItems1() {
         $testClass = 'Dhii\\SimpleTest\\Test\\MyTestCaseTest';
-        $errorTest = new SimpleTest\Test\DefaultTest($testClass, 'testError', sprintf('%1$s::%2$s', $testClass, 'testError'));
+        $errorTest = new SimpleTest\Test\Test($testClass, 'testError', sprintf('%1$s::%2$s', $testClass, 'testError'));
         $tests = array(
-            new SimpleTest\Test\DefaultTest($testClass, 'testNothing', sprintf('%1$s::%2$s', $testClass, 'testNothing')),
-            new SimpleTest\Test\DefaultTest($testClass, 'testFailure', sprintf('%1$s::%2$s', $testClass, 'testFailure')),
-            new SimpleTest\Test\DefaultTest($testClass, 'testSuccess', sprintf('%1$s::%2$s', $testClass, 'testSuccess')),
+            new SimpleTest\Test\Test($testClass, 'testNothing', sprintf('%1$s::%2$s', $testClass, 'testNothing')),
+            new SimpleTest\Test\Test($testClass, 'testFailure', sprintf('%1$s::%2$s', $testClass, 'testFailure')),
+            new SimpleTest\Test\Test($testClass, 'testSuccess', sprintf('%1$s::%2$s', $testClass, 'testSuccess')),
 //            $errorTest, // This won't work, because you can't add the same test twice - to any suite
             $errorTest
         );
@@ -40,7 +40,7 @@ class MyTestSource extends AbstractSource
      */
     public function getItems2()
     {
-        $locator = new SimpleTest\Locator\DefaultClassLocator();
+        $locator = new SimpleTest\Locator\ClassLocator();
         $locator->setClass('Dhii\\SimpleTest\\Test\\MyTestCaseTest');
         return $locator->locate();
     }
@@ -52,7 +52,7 @@ class MyTestSource extends AbstractSource
      */
     public function getItems()
     {
-        $locator = new SimpleTest\Locator\DefaultFilePathLocator();
+        $locator = new SimpleTest\Locator\FilePathLocator();
 //        $locator->addPath(__DIR__.'/*'); // All files in a folder
 //        $locator->addPath(__DIR__.'/MyTestCaseTest.php'); // A specific file
 //        $locator->addPath(dirname(__DIR__).'/*/*'); // A file pattern
@@ -74,7 +74,7 @@ class BasicTestCase
 
     public function createWriter($verbosityLevel = 1)
     {
-        $writer = new SimpleTest\Writer\DefaultWriter();
+        $writer = new SimpleTest\Writer\Writer();
         $writer->setLevel($verbosityLevel);
 
         return $writer;
@@ -82,14 +82,14 @@ class BasicTestCase
 
     public function createAssertionMaker()
     {
-        $assertionMaker = new SimpleTest\Assertion\DefaultMaker();
+        $assertionMaker = new SimpleTest\Assertion\Maker();
 
         return $assertionMaker;
     }
 
     public function createCoordinator(SimpleTest\Writer\WriterInterface $writer)
     {
-        $coordinator = new SimpleTest\Coordinator\DefaultCoordinator($writer);
+        $coordinator = new SimpleTest\Coordinator\Coordinator($writer);
 
         return $coordinator;
     }
@@ -99,7 +99,7 @@ class BasicTestCase
             SimpleTest\Assertion\MakerInterface $assertionMaker,
             \Dhii\Stats\AggregatorInterface $statAggregator)
     {
-        $runner = new SimpleTest\Runner\DefaultRunner($coordinator, $assertionMaker, $statAggregator);
+        $runner = new SimpleTest\Runner\Runner($coordinator, $assertionMaker, $statAggregator);
 
         return $runner;
     }
@@ -109,14 +109,14 @@ class BasicTestCase
             SimpleTest\Runner\RunnerInterface $runner,
             \Dhii\Stats\AggregatorInterface $statAggregator)
     {
-        $tester = new SimpleTest\Tester\Tester($coordinator, $runner, $statAggregator);
+        $tester = new SimpleTest\Tester\Tester();
 
         return $tester;
     }
 
     public function createStatAggregator()
     {
-        $aggregator = new DefaultAggregator();
+        $aggregator = new Aggregator();
 
         return $aggregator;
     }
@@ -132,7 +132,7 @@ class BasicTestCase
 
     public function createSuite($tests, $code, SimpleTest\Coordinator\CoordinatorInterface $coordinator)
     {
-        $suite = new SimpleTest\Suite\DefaultSuite($code, $coordinator);
+        $suite = new SimpleTest\Suite\Suite($code, $coordinator);
         $suite->addTests($tests);
 
         return $suite;

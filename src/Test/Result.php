@@ -7,7 +7,7 @@ namespace Dhii\SimpleTest\Test;
  *
  * @since [*next-version*]
  */
-class DefaultResult extends AbstractAccountableResult
+class Result extends AbstractAccountableResult
 {
     /**
      * @since [*next-version*]

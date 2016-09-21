@@ -9,18 +9,18 @@ use Dhii\SimpleTest\Test;
  *
  * @since [*next-version*]
  */
-class DefaultClassLocator extends AbstractClassLocator
+class ClassLocator extends AbstractClassLocator
 {
     /**
      * {@inheritdoc}
      *
      * @since [*next-version*]
      *
-     * @return Test\DefaultTest
+     * @return Test\Test
      */
     protected function _createTest($className, $methodName, $key)
     {
-        return new Test\DefaultTest($className, $methodName, $key);
+        return new Test\Test($className, $methodName, $key);
     }
 
     /**
@@ -59,10 +59,10 @@ class DefaultClassLocator extends AbstractClassLocator
      *
      * @param array|\Traversable $items
      *
-     * @return DefaultResultSet The new result set.
+     * @return ResultSet The new result set.
      */
     protected function _createResultSet($items)
     {
-        return new DefaultResultSet($items);
+        return new ResultSet($items);
     }
 }
