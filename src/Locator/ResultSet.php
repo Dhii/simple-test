@@ -19,6 +19,7 @@ class ResultSet extends AbstractResultSet
      */
     public function __construct($items)
     {
+        $this->_construct();
         $this->_addItems($items);
     }
 
