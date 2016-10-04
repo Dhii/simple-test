@@ -34,7 +34,7 @@ class Tester extends AbstractStatefulTester implements Suite\FactoryInterface
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      *
      * @since [*next-version*]
      */
@@ -44,7 +44,7 @@ class Tester extends AbstractStatefulTester implements Suite\FactoryInterface
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      *
      * @since [*next-version*]
      */
@@ -54,7 +54,7 @@ class Tester extends AbstractStatefulTester implements Suite\FactoryInterface
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      *
      * @since [*next-version*]
      */
@@ -95,7 +95,7 @@ class Tester extends AbstractStatefulTester implements Suite\FactoryInterface
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      *
      * @since [*next-version*]
      */
@@ -105,7 +105,7 @@ class Tester extends AbstractStatefulTester implements Suite\FactoryInterface
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      *
      * @since [*next-version*]
      */
@@ -115,7 +115,7 @@ class Tester extends AbstractStatefulTester implements Suite\FactoryInterface
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      *
      * @since [*next-version*]
      */
@@ -125,7 +125,7 @@ class Tester extends AbstractStatefulTester implements Suite\FactoryInterface
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      *
      * @since [*next-version*]
      */
