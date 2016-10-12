@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2d81d2027b4d58f5543a8abe6bc25fe8",
-    "content-hash": "5113337bc6020114f28d722288424f68",
+    "hash": "f8807d46d1a0473f1547974df8c72c81",
+    "content-hash": "40112b5dca8f2cdcb2471afa350e07c3",
     "packages": [
         {
             "name": "dhii/collections-abstract",
@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/collections-abstract.git",
-                "reference": "19dc56c9e60488c8b25039e377c5196438faa1da"
+                "reference": "d63b920b960b3b1176cac17d402e6aaf7f9b3c29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/collections-abstract/zipball/19dc56c9e60488c8b25039e377c5196438faa1da",
-                "reference": "19dc56c9e60488c8b25039e377c5196438faa1da",
+                "url": "https://api.github.com/repos/Dhii/collections-abstract/zipball/d63b920b960b3b1176cac17d402e6aaf7f9b3c29",
+                "reference": "d63b920b960b3b1176cac17d402e6aaf7f9b3c29",
                 "shasum": ""
             },
             "require": {
@@ -48,7 +48,7 @@
                 }
             ],
             "description": "A collections library",
-            "time": "2016-10-01 15:37:33"
+            "time": "2016-10-12 12:02:52"
         },
         {
             "name": "dhii/collections-abstract-base",
@@ -56,20 +56,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/collections-abstract-base.git",
-                "reference": "1b7f4f11eb5db50e6dad76356012e1567f5f65dc"
+                "reference": "b5766ae2d22e7dafa559176a77e1664593493f9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/collections-abstract-base/zipball/1b7f4f11eb5db50e6dad76356012e1567f5f65dc",
-                "reference": "1b7f4f11eb5db50e6dad76356012e1567f5f65dc",
+                "url": "https://api.github.com/repos/Dhii/collections-abstract-base/zipball/b5766ae2d22e7dafa559176a77e1664593493f9a",
+                "reference": "b5766ae2d22e7dafa559176a77e1664593493f9a",
                 "shasum": ""
             },
             "require": {
                 "dhii/collections-interface": "dev-develop"
             },
             "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
                 "dhii/php-cs-fixer-config": "dev-php-5.3",
-                "phpunit/phpunit": "4.*",
+                "phpunit/phpunit": "^4.8",
                 "ptrofimov/xpmock": "^1.1"
             },
             "type": "library",
@@ -89,7 +90,7 @@
                 }
             ],
             "description": "Collection base classes that do not depend on other non-collection packages, on which there is a dependency of other collection packages that depend on this package. This is done to avoid circular reference in the collection toolchain",
-            "time": "2016-09-30 16:59:34"
+            "time": "2016-10-12 12:58:22"
         },
         {
             "name": "dhii/collections-interface",
@@ -138,7 +139,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/simple-test-abstract.git",
-                "reference": "a329ed41d496672ef533b5242936e495f654a22f"
+                "reference": "36804a0c2fe5bbecaec404ccf52a1ede75f33a9a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dhii/simple-test-abstract/zipball/36804a0c2fe5bbecaec404ccf52a1ede75f33a9a",
+                "reference": "36804a0c2fe5bbecaec404ccf52a1ede75f33a9a",
+                "shasum": ""
             },
             "require": {
                 "dhii/collections-abstract": "dev-develop",
@@ -158,11 +165,7 @@
                     "Dhii\\SimpleTest\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Dhii\\SimpleTest\\Test\\Stub\\": "test/stub/"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -173,7 +176,7 @@
                 }
             ],
             "description": "Base classes for SimpleTest",
-            "time": "2016-10-04 18:00:10"
+            "time": "2016-10-12 12:11:13"
         },
         {
             "name": "dhii/simple-test-interface",
@@ -219,20 +222,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/stats-abstract.git",
-                "reference": "f905e5a791bf4e7d8e3d891abb24957aa0dbe0ae"
+                "reference": "28fa46e5fa92c4bbfb6b030b04db06a34a42dbb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/stats-abstract/zipball/f905e5a791bf4e7d8e3d891abb24957aa0dbe0ae",
-                "reference": "f905e5a791bf4e7d8e3d891abb24957aa0dbe0ae",
+                "url": "https://api.github.com/repos/Dhii/stats-abstract/zipball/28fa46e5fa92c4bbfb6b030b04db06a34a42dbb1",
+                "reference": "28fa46e5fa92c4bbfb6b030b04db06a34a42dbb1",
                 "shasum": ""
             },
             "require": {
                 "dhii/collections-abstract-base": "dev-develop",
-                "dhii/stats-interface": "dev-master"
+                "dhii/stats-interface": "dev-develop"
             },
             "require-dev": {
-                "dhii/php-cs-fixer-config": "dev-php-5.3"
+                "dhii/php-cs-fixer-config": "dev-php-5.3",
+                "phpunit/phpunit": "^4.8",
+                "ptrofimov/xpmock": "^1.1"
             },
             "type": "library",
             "autoload": {
@@ -251,11 +256,11 @@
                 }
             ],
             "description": "Abstract base for stats",
-            "time": "2016-09-25 07:24:24"
+            "time": "2016-10-12 11:44:09"
         },
         {
             "name": "dhii/stats-interface",
-            "version": "dev-master",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/stats-interface.git",
