@@ -19,6 +19,7 @@ class ResultSet extends AbstractResultSet
      */
     public function __construct($results, Stats\AggregatorInterface $statAggregator)
     {
+        $this->_construct();
         $this->_addItems($results);
         $this->_setStatAggregator($statAggregator);
     }

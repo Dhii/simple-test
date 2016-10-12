@@ -28,11 +28,5 @@
         "psr-4": {
             "Dhii\\SimpleTest\\Test\\Stub\\": "test/stub/"
         }
-    },
-    "repositories": [
-        {
-            "url": "https://github.com/Dhii/simple-test-abstract.git",
-            "type": "git"
-        }
-    ]
+    }
 }

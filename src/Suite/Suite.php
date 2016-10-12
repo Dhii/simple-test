@@ -21,6 +21,8 @@ class Suite extends AbstractSuite
      */
     public function __construct($code, Coordinator\CoordinatorInterface $coordinator)
     {
+        $this->_construct();
+
         $this->_setCode($code)
                 ->_setCoordinator($coordinator);
     }
