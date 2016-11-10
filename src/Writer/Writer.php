@@ -5,14 +5,14 @@ namespace Dhii\SimpleTest\Writer;
 /**
  * A default writer implementation.
  *
- * @since [*next-version*]
+ * @since 0.1.0
  */
 class Writer extends AbstractWriter
 {
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      */
     public function _write($text)
     {
@@ -24,7 +24,7 @@ class Writer extends AbstractWriter
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      */
     public function writeH5($text, $level = self::LVL_1)
     {
@@ -34,7 +34,7 @@ class Writer extends AbstractWriter
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      */
     public function writeH4($text, $level = self::LVL_1)
     {
@@ -46,7 +46,7 @@ class Writer extends AbstractWriter
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      */
     public function writeH2($text, $level = self::LVL_1)
     {

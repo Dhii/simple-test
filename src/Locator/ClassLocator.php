@@ -7,14 +7,14 @@ use Dhii\SimpleTest\Test;
 /**
  * A default implementation of a class test locator.
  *
- * @since [*next-version*]
+ * @since 0.1.0
  */
 class ClassLocator extends AbstractClassLocator
 {
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      *
      * @return Test\Test
      */
@@ -26,7 +26,7 @@ class ClassLocator extends AbstractClassLocator
     /**
      * Checks if the given method's name starts with "test".
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      */
     protected function _matchMethod(\ReflectionMethod $method)
     {
@@ -36,7 +36,7 @@ class ClassLocator extends AbstractClassLocator
     /**
      * Checks if the given string starts with the specified prefix.
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      *
      * @param string $string         The string to check.
      * @param string $requiredPrefix The prefix.
@@ -55,7 +55,7 @@ class ClassLocator extends AbstractClassLocator
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      *
      * @param array|\Traversable $items
      *

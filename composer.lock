@@ -4,27 +4,27 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b96d14a95ddfbc44fdfc4851c5e3f3df",
-    "content-hash": "29cd5437ffc66efe81ff2c5b9cd18d97",
+    "hash": "2d16c569f05b39c634b589fcd43f2057",
+    "content-hash": "e27ff784249e2cedc80d6f17cf9ae7a6",
     "packages": [
         {
             "name": "dhii/collections-abstract",
-            "version": "dev-master",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/collections-abstract.git",
-                "reference": "153e40dab2d8344ba32c1e907bf2cd50936535cd"
+                "reference": "7c9141202af4d83b31e75efcbf481fa1cb588ad8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/collections-abstract/zipball/153e40dab2d8344ba32c1e907bf2cd50936535cd",
-                "reference": "153e40dab2d8344ba32c1e907bf2cd50936535cd",
+                "url": "https://api.github.com/repos/Dhii/collections-abstract/zipball/7c9141202af4d83b31e75efcbf481fa1cb588ad8",
+                "reference": "7c9141202af4d83b31e75efcbf481fa1cb588ad8",
                 "shasum": ""
             },
             "require": {
-                "dhii/collections-abstract-base": "dev-master",
-                "dhii/collections-interface": "dev-master",
-                "dhii/stats-abstract": "dev-master"
+                "dhii/collections-abstract-base": "^0.1.0",
+                "dhii/collections-interface": "^0.1.1",
+                "dhii/stats-abstract": "^0.1.0"
             },
             "require-dev": {
                 "dhii/php-cs-fixer-config": "dev-php-5.3",
@@ -48,24 +48,24 @@
                 }
             ],
             "description": "A collections library",
-            "time": "2016-10-12 17:47:09"
+            "time": "2016-11-10 19:29:24"
         },
         {
             "name": "dhii/collections-abstract-base",
-            "version": "dev-master",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/collections-abstract-base.git",
-                "reference": "699430c5bd24f0bd5a886ac77484a5271f6a6527"
+                "reference": "0ec0147451a72a13fb327ac6ff747c5e953c56f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/collections-abstract-base/zipball/699430c5bd24f0bd5a886ac77484a5271f6a6527",
-                "reference": "699430c5bd24f0bd5a886ac77484a5271f6a6527",
+                "url": "https://api.github.com/repos/Dhii/collections-abstract-base/zipball/0ec0147451a72a13fb327ac6ff747c5e953c56f3",
+                "reference": "0ec0147451a72a13fb327ac6ff747c5e953c56f3",
                 "shasum": ""
             },
             "require": {
-                "dhii/collections-interface": "dev-master"
+                "dhii/collections-interface": "^0.1.1"
             },
             "require-dev": {
                 "codeclimate/php-test-reporter": "dev-master",
@@ -90,20 +90,20 @@
                 }
             ],
             "description": "Collection base classes that do not depend on other non-collection packages, on which there is a dependency of other collection packages that depend on this package. This is done to avoid circular reference in the collection toolchain",
-            "time": "2016-10-11 19:04:21"
+            "time": "2016-11-10 15:09:37"
         },
         {
             "name": "dhii/collections-interface",
-            "version": "dev-master",
+            "version": "v0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/collections-interface.git",
-                "reference": "65a5fd89ec5605fa57d2feb3e9cee885887f0313"
+                "reference": "1d8c785cdf8b63334b35f9a2d663b82e56d06e4f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/collections-interface/zipball/65a5fd89ec5605fa57d2feb3e9cee885887f0313",
-                "reference": "65a5fd89ec5605fa57d2feb3e9cee885887f0313",
+                "url": "https://api.github.com/repos/Dhii/collections-interface/zipball/1d8c785cdf8b63334b35f9a2d663b82e56d06e4f",
+                "reference": "1d8c785cdf8b63334b35f9a2d663b82e56d06e4f",
                 "shasum": ""
             },
             "require": {
@@ -131,26 +131,26 @@
                 }
             ],
             "description": "Interfaces for collections",
-            "time": "2016-10-11 18:00:09"
+            "time": "2016-11-09 19:23:28"
         },
         {
             "name": "dhii/simple-test-abstract",
-            "version": "dev-master",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/simple-test-abstract.git",
-                "reference": "97ab4c5a1c828b14cafa9e11abb52390df2a4c3c"
+                "reference": "fff22928c6e3bfb7f3695c3ae2e7ce0dce426c09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/simple-test-abstract/zipball/97ab4c5a1c828b14cafa9e11abb52390df2a4c3c",
-                "reference": "97ab4c5a1c828b14cafa9e11abb52390df2a4c3c",
+                "url": "https://api.github.com/repos/Dhii/simple-test-abstract/zipball/fff22928c6e3bfb7f3695c3ae2e7ce0dce426c09",
+                "reference": "fff22928c6e3bfb7f3695c3ae2e7ce0dce426c09",
                 "shasum": ""
             },
             "require": {
-                "dhii/collections-abstract": "dev-master",
-                "dhii/simple-test-interface": "dev-master",
-                "dhii/stats-abstract": "dev-master",
+                "dhii/collections-abstract": "^0.1.0",
+                "dhii/simple-test-interface": "^0.1.0",
+                "dhii/stats-abstract": "^0.1.0",
                 "php": "^5.3.3 | ^7.0"
             },
             "require-dev": {
@@ -176,21 +176,24 @@
                 }
             ],
             "description": "Base classes for SimpleTest",
-            "time": "2016-10-12 18:19:39"
+            "time": "2016-11-10 21:16:16"
         },
         {
             "name": "dhii/simple-test-interface",
-            "version": "dev-master",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/simple-test-interface.git",
-                "reference": "63d98dd026999a97eab9e9f7c56a7f0903aa2691"
+                "reference": "2a36c488250bddc668addddea9c26b6a3d446843"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/simple-test-interface/zipball/63d98dd026999a97eab9e9f7c56a7f0903aa2691",
-                "reference": "63d98dd026999a97eab9e9f7c56a7f0903aa2691",
+                "url": "https://api.github.com/repos/Dhii/simple-test-interface/zipball/2a36c488250bddc668addddea9c26b6a3d446843",
+                "reference": "2a36c488250bddc668addddea9c26b6a3d446843",
                 "shasum": ""
+            },
+            "require": {
+                "php": "^5.3 | ^7.0"
             },
             "require-dev": {
                 "dhii/php-cs-fixer-config": "dev-php-5.3",
@@ -214,25 +217,25 @@
                 }
             ],
             "description": "Interfaces for Dhii SimpleTest",
-            "time": "2016-09-15 16:05:09"
+            "time": "2016-11-10 20:08:25"
         },
         {
             "name": "dhii/stats-abstract",
-            "version": "dev-master",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/stats-abstract.git",
-                "reference": "29bf0da6147bbb87bc5fdc9f7027b979678c9e68"
+                "reference": "71f6702c3257c71ab3917b6d076d3c3588cc9f49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/stats-abstract/zipball/29bf0da6147bbb87bc5fdc9f7027b979678c9e68",
-                "reference": "29bf0da6147bbb87bc5fdc9f7027b979678c9e68",
+                "url": "https://api.github.com/repos/Dhii/stats-abstract/zipball/71f6702c3257c71ab3917b6d076d3c3588cc9f49",
+                "reference": "71f6702c3257c71ab3917b6d076d3c3588cc9f49",
                 "shasum": ""
             },
             "require": {
-                "dhii/collections-abstract-base": "dev-master",
-                "dhii/stats-interface": "dev-master"
+                "dhii/collections-abstract-base": "^0.1.0",
+                "dhii/stats-interface": "^0.1.0"
             },
             "require-dev": {
                 "dhii/php-cs-fixer-config": "dev-php-5.3",
@@ -256,24 +259,27 @@
                 }
             ],
             "description": "Abstract base for stats",
-            "time": "2016-10-12 07:11:09"
+            "time": "2016-11-10 18:55:43"
         },
         {
             "name": "dhii/stats-interface",
-            "version": "dev-master",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/stats-interface.git",
-                "reference": "afb71a15096e9857e78d6a85d317f3e7a1dc350f"
+                "reference": "36d09a8b8a3b8058214dae6eefb8ecdd98e0f0ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/stats-interface/zipball/afb71a15096e9857e78d6a85d317f3e7a1dc350f",
-                "reference": "afb71a15096e9857e78d6a85d317f3e7a1dc350f",
+                "url": "https://api.github.com/repos/Dhii/stats-interface/zipball/36d09a8b8a3b8058214dae6eefb8ecdd98e0f0ba",
+                "reference": "36d09a8b8a3b8058214dae6eefb8ecdd98e0f0ba",
                 "shasum": ""
             },
+            "require": {
+                "php": "^5.3 | ^7.0"
+            },
             "require-dev": {
-                "dhii/php-cs-fixer-config": "dev-master"
+                "dhii/php-cs-fixer-config": "dev-php-5.3"
             },
             "type": "library",
             "autoload": {
@@ -292,7 +298,7 @@
                 }
             ],
             "description": "Interfaces for stats",
-            "time": "2016-09-02 14:58:12"
+            "time": "2016-11-10 15:38:37"
         }
     ],
     "packages-dev": [
@@ -520,12 +526,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle3.git",
-                "reference": "b3f5050cb6270c7a728a0b74ac2de50a262b3e02"
+                "reference": "f7778ed85e3db90009d79725afd6c3a82dab32fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/b3f5050cb6270c7a728a0b74ac2de50a262b3e02",
-                "reference": "b3f5050cb6270c7a728a0b74ac2de50a262b3e02",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/f7778ed85e3db90009d79725afd6c3a82dab32fe",
+                "reference": "f7778ed85e3db90009d79725afd6c3a82dab32fe",
                 "shasum": ""
             },
             "require": {
@@ -608,7 +614,7 @@
                 "web service"
             ],
             "abandoned": "guzzlehttp/guzzle",
-            "time": "2015-04-29 17:06:53"
+            "time": "2016-10-26 18:22:07"
         },
         {
             "name": "padraic/humbug_get_contents",
@@ -1718,12 +1724,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "f8b1922bbda9d2ac86aecd649399040bce849fde"
+                "reference": "1361bc4e66f97b6202ae83f4190e962c624b5e61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/f8b1922bbda9d2ac86aecd649399040bce849fde",
-                "reference": "f8b1922bbda9d2ac86aecd649399040bce849fde",
+                "url": "https://api.github.com/repos/symfony/config/zipball/1361bc4e66f97b6202ae83f4190e962c624b5e61",
+                "reference": "1361bc4e66f97b6202ae83f4190e962c624b5e61",
                 "shasum": ""
             },
             "require": {
@@ -1763,7 +1769,7 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2016-09-14 20:31:12"
+            "time": "2016-11-03 07:52:58"
         },
         {
             "name": "symfony/console",
@@ -1771,12 +1777,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "7350016c8abcab897046f1aead2b766b84d3eff8"
+                "reference": "ddb26174398f48486ac4231dc4f4cb27c3acba71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/7350016c8abcab897046f1aead2b766b84d3eff8",
-                "reference": "7350016c8abcab897046f1aead2b766b84d3eff8",
+                "url": "https://api.github.com/repos/symfony/console/zipball/ddb26174398f48486ac4231dc4f4cb27c3acba71",
+                "reference": "ddb26174398f48486ac4231dc4f4cb27c3acba71",
                 "shasum": ""
             },
             "require": {
@@ -1824,7 +1830,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-10-06 01:43:09"
+            "time": "2016-11-04 17:49:05"
         },
         {
             "name": "symfony/debug",
@@ -1832,12 +1838,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "8c29235936a47473af16fb91c7c4b7b193c5693c"
+                "reference": "d99867cf7b8a0b08e4ad6e1f130268bcb6a64888"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/8c29235936a47473af16fb91c7c4b7b193c5693c",
-                "reference": "8c29235936a47473af16fb91c7c4b7b193c5693c",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/d99867cf7b8a0b08e4ad6e1f130268bcb6a64888",
+                "reference": "d99867cf7b8a0b08e4ad6e1f130268bcb6a64888",
                 "shasum": ""
             },
             "require": {
@@ -1881,7 +1887,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2016-09-06 10:55:00"
+            "time": "2016-11-03 07:52:58"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -1889,12 +1895,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "889983a79a043dfda68f38c38b6dba092dd49cd8"
+                "reference": "25c576abd4e0f212e678fe8b2bd9a9a98c7ea934"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/889983a79a043dfda68f38c38b6dba092dd49cd8",
-                "reference": "889983a79a043dfda68f38c38b6dba092dd49cd8",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/25c576abd4e0f212e678fe8b2bd9a9a98c7ea934",
+                "reference": "25c576abd4e0f212e678fe8b2bd9a9a98c7ea934",
                 "shasum": ""
             },
             "require": {
@@ -1941,7 +1947,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2016-07-28 16:56:28"
+            "time": "2016-10-13 01:43:15"
         },
         {
             "name": "symfony/filesystem",
@@ -1949,12 +1955,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "44b499521defddf2eae17a18c811bbdae4f98bdf"
+                "reference": "a3784111af9f95f102b6411548376e1ae7c93898"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/44b499521defddf2eae17a18c811bbdae4f98bdf",
-                "reference": "44b499521defddf2eae17a18c811bbdae4f98bdf",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/a3784111af9f95f102b6411548376e1ae7c93898",
+                "reference": "a3784111af9f95f102b6411548376e1ae7c93898",
                 "shasum": ""
             },
             "require": {
@@ -1990,7 +1996,7 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2016-09-06 10:55:00"
+            "time": "2016-10-18 04:28:30"
         },
         {
             "name": "symfony/finder",
@@ -1998,12 +2004,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "bc24c8f5674c6f6841f2856b70e5d60784be5691"
+                "reference": "0023b024363dfc0cd21262e556f25a291fe8d7fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/bc24c8f5674c6f6841f2856b70e5d60784be5691",
-                "reference": "bc24c8f5674c6f6841f2856b70e5d60784be5691",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/0023b024363dfc0cd21262e556f25a291fe8d7fd",
+                "reference": "0023b024363dfc0cd21262e556f25a291fe8d7fd",
                 "shasum": ""
             },
             "require": {
@@ -2039,7 +2045,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2016-09-28 00:10:16"
+            "time": "2016-11-03 07:52:58"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -2204,12 +2210,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "e7540734bad981fe59f8ef14b6fc194ae9df8d9c"
+                "reference": "58666e4ac3a2d378798f020308b35a75ffbeaafb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/e7540734bad981fe59f8ef14b6fc194ae9df8d9c",
-                "reference": "e7540734bad981fe59f8ef14b6fc194ae9df8d9c",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/58666e4ac3a2d378798f020308b35a75ffbeaafb",
+                "reference": "58666e4ac3a2d378798f020308b35a75ffbeaafb",
                 "shasum": ""
             },
             "require": {
@@ -2245,13 +2251,12 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-09-02 01:57:56"
+            "time": "2016-11-03 07:52:58"
         }
     ],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "dhii/simple-test-abstract": 20,
         "dhii/php-cs-fixer-config": 20,
         "codeclimate/php-test-reporter": 20
     },

@@ -8,12 +8,12 @@ use Dhii\SimpleTest\Coordinator;
 /**
  * A default test suite implementation.
  *
- * @since [*next-version*]
+ * @since 0.1.0
  */
 class Suite extends AbstractSuite
 {
     /**
-     * @since [*next-version*]
+     * @since 0.1.0
      *
      * @param string                           $code        This suite's unique code.
      * @param Runner\RunnerInterface           $runner      The runner that will run this suite's tests.
