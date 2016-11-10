@@ -10,7 +10,7 @@ use Dhii\SimpleTest\Assertion;
 /**
  * A default handling implementation.
  *
- * @since [*next-version*]
+ * @since 0.1.0
  */
 class Coordinator extends AbstractCoordinator
 {
@@ -27,7 +27,7 @@ class Coordinator extends AbstractCoordinator
     /**
      * Retrieve the writer used by this instance.
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      *
      * @return Writer\WriterInterface The writer used by this instance.
      */
@@ -39,7 +39,7 @@ class Coordinator extends AbstractCoordinator
     /**
      * Sets a writer to be used by this instance.
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      *
      * @param Writer\WriterInterface $writer The writer to be used by this instance.
      *
@@ -55,7 +55,7 @@ class Coordinator extends AbstractCoordinator
     /**
      * Retrieves a normalized text message of a test result.
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      *
      * @param Test\ResultInterface $test The test result, for which to get the message.
      *
@@ -84,7 +84,7 @@ class Coordinator extends AbstractCoordinator
     /**
      * Format a size in human-readable units.
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      *
      * @param int $size      A size in bytes.
      * @param int $precision To which digit to round the eventual result.
@@ -107,7 +107,7 @@ class Coordinator extends AbstractCoordinator
     /**
      * Executes before a test runs.
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      *
      * @param Test\TestInterface $test   The test that is about to run.
      * @param mixed              $source The source of this event.
@@ -120,7 +120,7 @@ class Coordinator extends AbstractCoordinator
     /**
      * Executes after a test runs.
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      *
      * @param Test\ResultInterface $result The result of the test that was ran.
      * @param mixed                $source The source of this event.
@@ -143,7 +143,7 @@ class Coordinator extends AbstractCoordinator
     /**
      * Executes before a tester runs all of its suites.
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      *
      * @param Tester\ResultSetInterface $results The tester that is about to run the suites.
      * @param mixed                     $source  The source of this event.
@@ -205,7 +205,7 @@ class Coordinator extends AbstractCoordinator
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      */
     protected function _any($target, $data = null, $source = null)
     {

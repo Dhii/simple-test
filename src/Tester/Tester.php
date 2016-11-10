@@ -14,7 +14,7 @@ use Dhii\Stats;
 /**
  * A default tester implementation.
  *
- * @since [*next-version*]
+ * @since 0.1.0
  */
 class Tester extends AbstractStatefulTester implements Suite\FactoryInterface
 {
@@ -22,7 +22,7 @@ class Tester extends AbstractStatefulTester implements Suite\FactoryInterface
      * @param Writer\WriterInterface A writer for this tester to use.
      *  If none given, will create a default writer instance.
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      *
      * @param Writer\WriterInterface $writer The writer to assign to this instance.
      */
@@ -36,7 +36,7 @@ class Tester extends AbstractStatefulTester implements Suite\FactoryInterface
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      */
     public function createSuite($code)
     {
@@ -46,7 +46,7 @@ class Tester extends AbstractStatefulTester implements Suite\FactoryInterface
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      */
     protected function _createWriter()
     {
@@ -56,7 +56,7 @@ class Tester extends AbstractStatefulTester implements Suite\FactoryInterface
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      */
     protected function _createAssertionMaker()
     {
@@ -66,7 +66,7 @@ class Tester extends AbstractStatefulTester implements Suite\FactoryInterface
     /**
      * Prepares a result set from an array of results.
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      *
      * @param Test\ResultInterface[]|\Traversable $results A traversible list of result sets.
      *
@@ -80,7 +80,7 @@ class Tester extends AbstractStatefulTester implements Suite\FactoryInterface
     /**
      * Creates a new instance of a result set collection.
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      *
      * @param Test\ResultInterface[]|\Traversable $results A traversible list of result sets.
      * @param Stats\AggregatorInterface The stat aggregator for the new iterator.
@@ -97,7 +97,7 @@ class Tester extends AbstractStatefulTester implements Suite\FactoryInterface
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      */
     protected function _createSuite($code, Coordinator\CoordinatorInterface $coordinator)
     {
@@ -107,7 +107,7 @@ class Tester extends AbstractStatefulTester implements Suite\FactoryInterface
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      */
     protected function _createStatAggregator()
     {
@@ -117,7 +117,7 @@ class Tester extends AbstractStatefulTester implements Suite\FactoryInterface
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      */
     protected function _createCoordinator(Writer\WriterInterface $writer)
     {
@@ -127,7 +127,7 @@ class Tester extends AbstractStatefulTester implements Suite\FactoryInterface
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      */
     protected function _createRunner(Coordinator\CoordinatorInterface $coordinator, Assertion\MakerInterface $assertionMaker, Stats\AggregatorInterface $statAggregator)
     {

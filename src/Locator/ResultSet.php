@@ -8,12 +8,12 @@ use InvalidArgumentException;
 /**
  * A default locator result set implementation.
  *
- * @since [*next-version*]
+ * @since 0.1.0
  */
 class ResultSet extends AbstractResultSet
 {
     /**
-     * @since [*next-version*]
+     * @since 0.1.0
      *
      * @param Test\TestInterface[]|\Traversable $items The items for this set.
      */
@@ -26,7 +26,7 @@ class ResultSet extends AbstractResultSet
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      */
     protected function _validateItem($item)
     {

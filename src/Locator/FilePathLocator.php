@@ -7,14 +7,14 @@ namespace Dhii\SimpleTest\Locator;
  *
  * Uses all the default implementations of dependencies.
  *
- * @since [*next-version*]
+ * @since 0.1.0
  */
 class FilePathLocator extends AbstractFilePathLocator
 {
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      *
      * @return ClassLocator
      */
@@ -29,7 +29,7 @@ class FilePathLocator extends AbstractFilePathLocator
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      *
      * @return ResultSet
      */
@@ -43,7 +43,7 @@ class FilePathLocator extends AbstractFilePathLocator
      *
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      */
     protected function _matchFile($file)
     {

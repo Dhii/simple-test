@@ -5,7 +5,7 @@ namespace Dhii\SimpleTest\Assertion;
 /**
  * A default assertion maker implementation.
  *
- * @since [*next-version*]
+ * @since 0.1.0
  */
 class Maker extends AbstractAccountableMaker
 {
