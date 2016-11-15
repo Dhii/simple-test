@@ -5,12 +5,12 @@ namespace Dhii\SimpleTest\Test;
 /**
  * A default test implementation.
  *
- * @since [*next-version*]
+ * @since 0.1.0
  */
 class Test extends AbstractTest
 {
     /**
-     * @since [*next-version*]
+     * @since 0.1.0
      *
      * @param string $caseName   Name of the test case class for this test.
      * @param string $methodName Name of the test method.

@@ -7,12 +7,12 @@ use Dhii\Stats;
 /**
  * A default implementation of a test result set.
  *
- * @since [*next-version*]
+ * @since 0.1.0
  */
 class ResultSet extends AbstractResultSet
 {
     /**
-     * @since [*next-version*]
+     * @since 0.1.0
      *
      * @param mixed[]|\Traversable      $results        The list of results that this set represents.
      * @param Stats\AggregatorInterface $statAggregator The stat aggregator to be used by this instance.
@@ -29,7 +29,7 @@ class ResultSet extends AbstractResultSet
      *
      * Usually, this will be the same class as the object which the search is run on.
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      *
      * @param mixed[]|\Traversable $results The list of items that represents a search results.
      *

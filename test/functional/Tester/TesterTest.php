@@ -5,7 +5,7 @@ namespace Dhii\SimpleTest\FuncTest\Tester\Test;
 /**
  * Tests {@see Dhii\SimpleTest\Tester\Tester}
  * 
- * @since [*next-version*]
+ * @since 0.1.0
  */
 class TesterTest extends \Xpmock\TestCase
 {
@@ -14,7 +14,7 @@ class TesterTest extends \Xpmock\TestCase
     /**
      * Creates a new instance of the test subject.
      * 
-     * @since [*next-version*]
+     * @since 0.1.0
      * 
      * @return \Dhii\SimpleTest\Tester\Tester
      */
@@ -29,7 +29,7 @@ class TesterTest extends \Xpmock\TestCase
     /**
      * Creates a new class locator.
      * 
-     * @since [*next-version*]
+     * @since 0.1.0
      * 
      * @return \Dhii\SimpleTest\Locator\ClassLocator The new class locator instance.
      */
@@ -43,7 +43,7 @@ class TesterTest extends \Xpmock\TestCase
     /**
      * Creates a new test suite.
      * 
-     * @since [*next-version*]
+     * @since 0.1.0
      * 
      * @param \Dhii\SimpleTest\Test\TestInterface[] $tests An array of tests to include in the suite.
      * 
@@ -60,7 +60,7 @@ class TesterTest extends \Xpmock\TestCase
     /**
      * Creates a new coordinator.
      * 
-     * @since [*next-version*]
+     * @since 0.1.0
      * 
      * @return \Dhii\SimpleTest\Coordinator\DefaultCoordinator The new coordinator instance.
      */
@@ -75,7 +75,7 @@ class TesterTest extends \Xpmock\TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      * 
-     * @since [*next-version*]
+     * @since 0.1.0
      */
     public function testCanBeCreated()
     {
@@ -90,7 +90,7 @@ class TesterTest extends \Xpmock\TestCase
      * 
      * All dependencies implicit.
      * 
-     * @since [*next-version*]
+     * @since 0.1.0
      */
     public function testRunAllEmpty()
     {
@@ -108,7 +108,7 @@ class TesterTest extends \Xpmock\TestCase
      * 
      * All dependencies implicit.
      * 
-     * @since [*next-version*]
+     * @since 0.1.0
      */
     public function testRunAllResultType()
     {
@@ -138,7 +138,7 @@ class TesterTest extends \Xpmock\TestCase
      * 
      * All dependencies implicit.
      * 
-     * @since [*next-version*]
+     * @since 0.1.0
      */
     public function testRunAllResultFunctionality()
     {
@@ -178,7 +178,7 @@ class TesterTest extends \Xpmock\TestCase
      * 
      * All dependencies implicit.
      * 
-     * @since [*next-version*]
+     * @since 0.1.0
      */
     public function testRunAllOutput()
     {

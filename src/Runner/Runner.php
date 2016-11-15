@@ -10,12 +10,12 @@ use Dhii\SimpleTest\Assertion;
 /**
  * A default runner implementation.
  *
- * @since [*next-version*]
+ * @since 0.1.0
  */
 class Runner extends AbstractRunner
 {
     /**
-     * @since [*next-version*]
+     * @since 0.1.0
      *
      * @param Coordinator\CoordinatorInterface $coordinator    The coordinator that this runner will notify.
      * @param Assertion\MakerInterface         $assertionMaker The assertion maker that test cases run by this runner will use.
@@ -33,7 +33,7 @@ class Runner extends AbstractRunner
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      */
     public function getCode()
     {
@@ -43,7 +43,7 @@ class Runner extends AbstractRunner
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      */
     protected function _createResultFromTest(Test\TestBaseInterface $test, $message, $status, $assertionCount, $runnerCode, $time, $memory)
     {
@@ -63,7 +63,7 @@ class Runner extends AbstractRunner
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      */
     protected function _createResultSet($results)
     {

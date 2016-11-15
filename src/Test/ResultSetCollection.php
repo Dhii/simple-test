@@ -9,12 +9,12 @@ use Dhii\Stats;
  * An implementation of a result set that abstracts access to
  * multiple result sets.
  *
- * @since [*next-version*]
+ * @since 0.1.0
  */
 class ResultSetCollection extends AbstractResultSetCollection
 {
     /**
-     * @since [*next-version*]
+     * @since 0.1.0
      *
      * @param ResultSetInterface[]|\Traversable $items          A list of test result sets.
      * @param Stats\AggregatorInterface         $statAggregator The stat aggregator to be used by this instance.
@@ -28,7 +28,7 @@ class ResultSetCollection extends AbstractResultSetCollection
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      */
     protected function _createInnerIterator()
     {
@@ -38,7 +38,7 @@ class ResultSetCollection extends AbstractResultSetCollection
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      */
     protected function _validateItem($item)
     {
@@ -50,7 +50,7 @@ class ResultSetCollection extends AbstractResultSetCollection
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      */
     protected function _createSearchResultsIterator($results)
     {
@@ -65,7 +65,7 @@ class ResultSetCollection extends AbstractResultSetCollection
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1.0
      */
     protected function _isValidSearchResult($item)
     {

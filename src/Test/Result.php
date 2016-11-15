@@ -5,12 +5,12 @@ namespace Dhii\SimpleTest\Test;
 /**
  * A default result implementation.
  *
- * @since [*next-version*]
+ * @since 0.1.0
  */
 class Result extends AbstractAccountableResult
 {
     /**
-     * @since [*next-version*]
+     * @since 0.1.0
      *
      * @param string $caseName       The name of the test case class, to which the test belongs.
      * @param string $methodName     The name of the test method.
