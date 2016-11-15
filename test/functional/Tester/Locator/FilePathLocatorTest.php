@@ -5,14 +5,14 @@ namespace Dhii\SimpleTest\FuncTest\Tester\Locator;
 /**
  * Tests {@see Dhii\SimpleTest\Locator\FilePathLocator}
  *
- * @since [*next-version*]
+ * @since 0.1.1
  */
 class FilePathLocatorTest extends \Xpmock\TestCase
 {
     /**
      * Creates a new instance of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.1.1
      *
      * @return \Dhii\SimpleTest\Locator\FilePathLocator
      */
@@ -27,7 +27,7 @@ class FilePathLocatorTest extends \Xpmock\TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since [*next-version*]
+     * @since 0.1.1
      */
     public function testCanBeCreated()
     {
@@ -39,7 +39,7 @@ class FilePathLocatorTest extends \Xpmock\TestCase
     /**
      * Tests whether the correct tests will be located in multiple files.
      *
-     * @since [*next-version*]
+     * @since 0.1.1
      */
     public function testLocate()
     {
